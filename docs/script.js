@@ -9,6 +9,7 @@ const input = document.getElementById("input").innerHTML;
 const fetchData = { 
     method: 'POST', 
     body: JSON.parse(input),
+    mode: 'no-cors',
     headers: new Headers()
 }
 
