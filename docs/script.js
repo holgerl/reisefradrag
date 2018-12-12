@@ -6,11 +6,14 @@ const output = document.getElementById("output");
 
 const input = document.getElementById("input").innerHTML;
 
+cconst headers = new Headers();
+headers.append("Content-Type", "application/json");
+
 const fetchData = { 
     method: 'POST', 
     body: input,
     mode: 'no-cors',
-    headers: new Headers()
+    headers: headers
 }
 
 fetch("https://9f22opit6e.execute-api.us-east-2.amazonaws.com/default/reisefradrag", fetchData)
