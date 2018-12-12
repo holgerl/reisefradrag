@@ -6,7 +6,7 @@ const output = document.getElementById("output");
 
 const input = document.getElementById("input").innerHTML;
 
-cconst headers = new Headers();
+const headers = new Headers();
 headers.append("Content-Type", "application/json");
 
 const fetchData = { 
