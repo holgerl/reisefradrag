@@ -14,11 +14,10 @@ const fetchData = {
 }
 
 fetch("https://9f22opit6e.execute-api.us-east-2.amazonaws.com/default/reisefradrag", fetchData)
-    
   .then(function(response) {
     console.log(response);
     output.innerHTML = JSON.stringify(response.json());
   })
-.catch(function() {
-        console.log(e);
-    });
+  .catch(function() {
+    console.log(e);
+  });
