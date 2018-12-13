@@ -12,7 +12,7 @@ headers.append("Content-Type", "application/json");
 const fetchData = { 
     method: 'POST', 
     body: input,
-    mode: 'no-cors',
+    mode: 'cors',
     headers: headers
 }
 
