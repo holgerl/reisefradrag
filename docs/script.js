@@ -20,9 +20,9 @@ fetch("https://9f22opit6e.execute-api.us-east-2.amazonaws.com/default/reisefradr
   .then(function(response) {
     return response.json()
   })
-  .then(function(json) {
-    console.log(response);
-    output.innerHTML = json;
+  .then(function(data) {
+    console.log(data);
+    output.innerHTML = data;
   })
   .catch(function(e) {
     console.log(e);
