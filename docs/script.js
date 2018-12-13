@@ -22,7 +22,7 @@ fetch("https://9f22opit6e.execute-api.us-east-2.amazonaws.com/default/reisefradr
   })
   .then(function(data) {
     console.log(data);
-    output.innerHTML = data;
+    output.innerHTML = JSON.stringify(data);
   })
   .catch(function(e) {
     console.log(e);
