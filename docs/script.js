@@ -16,7 +16,8 @@ const fetchData = {
     headers: headers
 }
 
-fetch("https://9f22opit6e.execute-api.us-east-2.amazonaws.com/default/reisefradrag", fetchData)
+//fetch("https://9f22opit6e.execute-api.us-east-2.amazonaws.com/default/reisefradrag", fetchData)
+fetch("https://tvoc2vu9sj.execute-api.us-east-1.amazonaws.com/beta/reisefradrag", fetchData)
   .then(function(response) {
     return response.json()
   })
